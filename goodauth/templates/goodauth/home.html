@@ -1,0 +1,7 @@
+{% extends 'goodauth/base.html' %}
+{% load bootstrap3 %}
+
+{% block content %}
+	{% url 'goodauth:logout' as logout_url%}
+	{% bootstrap_button button_type='link' href=logout_url button_class='btn-danger' content='Logout'%}
+{% endblock %}

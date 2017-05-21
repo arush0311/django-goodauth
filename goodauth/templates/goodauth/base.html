@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>{% block title %}{% endblock %}</title>
+ 	{% load bootstrap3 %}
+ 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+ 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css">
+ </head>
+ <body>
+ 	<div class="container-fluid">
+ 		<div class="row justify-content-center">
+ 			<div class="col-md-5 bg-faded mt-5 p-4 rounded">
+ 				{% block content %}
+ 				{% endblock %}
+
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+ </body>
+ </html> 

@@ -1,0 +1,3 @@
+# Using django-bootstrap3 with bootstrap4 since django-bootstrap4 is not stable
+django-bootstrap3==8.2.3
+ 
