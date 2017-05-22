@@ -67,10 +67,20 @@ Mount goodauth
     ]
 
 
-Enjoy!!
+Now you can protect your views by authentication.
+
+.. code-block::
+
+    from django.contrib.auth.decorators import login_required
+
+    @login_required
+    def home(request):
+        return render(request, 'home.html') 
+
 
 Authentication URLs
--------------------
+~~~~~~~~~~~~~~~~~~~
+
 If `x` is the mount point:
 
 .. code-block::
